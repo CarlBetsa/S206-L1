@@ -24,7 +24,7 @@ describe('Criando cenario de teste para o site globalsqa', ()=>{
     cy.get('.btn-primary').should('be.disabled')
   })
 
-  it('Caso de teste: realizando login com sucesso', ()=>{
+  it.skip('Caso de teste: realizando login com sucesso', ()=>{
     let info = criarUsuario()
     cy.get('#username').type(info[0])
     cy.get('#password').type(info[1])
